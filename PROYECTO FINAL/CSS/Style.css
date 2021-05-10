@@ -225,7 +225,7 @@ form.sign-up-form{
 
 .container.sign-up-mode:after{
  transform:  translate(100%, -50%);
- right: 48%;
+ right: 49%;
 }
 
 .container.sign-up-mode .left-panel .image,
