@@ -20,6 +20,8 @@ body,input{
 	background-color:#FFFFFF;
 	overflow: hidden;
 }
+
+/*Circulo azul*/
 .container:after{
 	content: '';
 	position: absolute;
@@ -34,6 +36,8 @@ body,input{
 	transition: 1.8s ease-in-out;
 
 }
+
+/*Circulo verde*/
 .container:before{
 	content: '';
 	position: absolute;
@@ -68,6 +72,8 @@ body,input{
 	transition: 1s 0.7s ease-in-out;
 
 }
+
+/* los formularios para llenar 'registro' e 'iniciar sesion'*/
 form{
 	display: flex;
 	align-items: center;
@@ -79,6 +85,9 @@ form{
 	grid-row: 1 / 2;
 	transition: 0.2s 0.7s ease-in-out;
 }
+
+
+
 form.sign-in-form{
 	z-index: 2;
 }
@@ -124,13 +133,15 @@ form.sign-up-form{
 	color: #333;
 }
 
+/*BOTON*/
+
 .btn{
 	width: 150px;
 	height: 49px;
 	border:none;
 	outline: none;
 	border-radius: 49px;
-	cursor: pointer;
+		cursor: pointer;
 	background-color:#F5C63C;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -141,6 +152,7 @@ form.sign-up-form{
 	background-color: #E5A93A;
 }
 
+/*el panels-container contiene el panel izquierdo donde da la bienvenida,el boton de crear cuenta y su imagen, y el izquierdo contiene el boton de ingresar, con su respectivo texto e imagen*/  
 .panels-container{
 	position: absolute;
 	width: 100%;
@@ -216,7 +228,7 @@ form.sign-up-form{
 
 }
 
-/* ANIMATION */
+/* ANIMACION ----------------------------------------- */
 
 .container.sign-up-mode:before{
  transform:  translate(100%, -50%);
@@ -261,6 +273,8 @@ form.sign-up-form{
 	z-index: 2;
 	opacity: 1;
 }
+
+/* resolucion para tablets*/
 
 @media (max-width: 870px){
 	.container{
@@ -386,6 +400,7 @@ form.sign-up-form{
 	}
 }
 
+/* resolucion para Celulares*/
 @media (max-width: 570px){
 	form{
 		padding: 0 1.5rem;
