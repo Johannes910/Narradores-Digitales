@@ -171,17 +171,14 @@ class Main
 }
 
 ////////////////////////VARIABLES///////////////////////
-const sign_in_btn = document.querySelector("#sign-in-btn");
 const crearUsuario = document.querySelector("#CrearCuenta");
 
 /////////////////////// CREAR CUENTA///////////////////
-sign_in_btn.addEventListener('click',() =>{
-	container.classList.remove("sign-up-mode");
+crearUsuario.addEventListener('click', () =>{
 	crear_usuario();
 });
 
 //Método para crear una Cuenta usando el usuario y la contraseña
-//crearUsuario.addEventListener('click', crear_usuario());
 function crear_usuario() 
 {
 	var nombre = document.getElementById("NombreUsuario").value;
