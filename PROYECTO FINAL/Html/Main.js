@@ -183,6 +183,14 @@ function crear_usuario()
 {
 	var nombre = document.getElementById("NombreUsuario").value;
 	var contrasena = document.getElementById("Contrasena").value;
-	let laCuenta = Main.AgregarCuenta(1, nombre, contrasena);
-    console.log(laCuenta);
+    var contrasena2 = document.getElementById("Contrasena2").value;
+    if(contrasena == contrasena2)
+    {
+        let laCuenta = Main.AgregarCuenta(1, nombre, contrasena);
+        console.log(laCuenta);
+    }else
+    {
+        console.log("Contraseña incorrecta");        
+    }
+	
 }
