@@ -1,4 +1,3 @@
-// Declara el objeto de "SerialPort" que se va a utilizar
 let dato;
 let contador1 = 0;
 let contador2 = 0;
@@ -48,6 +47,7 @@ function getData() {
 function draw() 
 {
     drawScreen();
+
 }
 
 
@@ -62,8 +62,8 @@ class Personaje {
 class Rectangle extends Personaje {
     constructor(posX,posY,tam){
         super(posX,posY,tam);
-        this.speed = 20;
-        this.jumpSpeed = 30; 
+        this.speed = 2;
+        this.jumpSpeed = 3; 
     }
 
     draw(){
@@ -87,11 +87,11 @@ class Rectangle extends Personaje {
 
             case '3':
                 this.posY -= this.jumpSpeed;
-                if(this.posY<1400)
+                if(this.posY< 140)
                 {
                     this.jumpSpeed = -this.jumpSpeed;
                 }
-                if(this.posY > 2000)
+                if(this.posY > 180)
                 {
                     this.jumpSpeed = -this.jumpSpeed;
                     dato = '0';
@@ -122,10 +122,11 @@ class Rectangle extends Personaje {
     }
 }
 
-let personaje = new Rectangle(2000, 2000, 500);
+let personaje = new Rectangle(320, 180, 25);
 
 function drawScreen()
 {
+createCanvas(640,360);   
  background(232,120,146);
  rectMode(CENTER);
  fill(255);
